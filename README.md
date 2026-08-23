@@ -1,27 +1,24 @@
-# The Shaunverse v0.1
+# The Shaunverse v0.2
 
-A private-first installable web app for Shaun's media universe.
+Your personal media universe, organized.
 
-## Publish with GitHub Pages
-1. Open your `shaunverse` repository on GitHub.
-2. Upload **the contents of this folder** (not the enclosing folder): `index.html`, `styles.css`, `app.js`, `data.js`, `manifest.webmanifest`, `sw.js`, and both icon PNGs.
-3. Commit the files to the `main` branch.
-4. In the repository, open **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select **main** and **/(root)**, then Save.
-7. GitHub will publish the site at `https://shaunmanning.github.io/shaunverse/`.
+## v0.2 highlights
+- Movie posters and descriptions load on demand from Apple's public media catalog and cache locally.
+- Personal 0–10 ratings, favorites, status, and notes for books and movies.
+- Recommendation subgenres and lifecycle: Recommended → Want → Owned → Reading / Listening → Finished (or DNF).
+- Finished recommendations move from Active to History instead of disappearing forever.
+- Update Audible Library directly from a fresh Libation XLSX/CSV export.
+- Audible imports are stored separately from personal notes/ratings so updates do not overwrite them.
+- Manual Physical / Kindle / Audible books plus ISBN lookup.
+- A completely unnecessary but mission-critical Easter egg.
 
-## Install on iPhone
-Open the published URL in Safari → Share → Add to Home Screen → Add.
+## Updating from v0.1
+Upload all files in this package to the root of the existing `shaunverse` GitHub repository and replace files with the same names. GitHub Pages will redeploy automatically.
 
-## v0.1 features
-- 1,286 Audible titles
-- 327 deduplicated Apple movies
-- 56 personalized recommendations
-- Search and media filters
-- Detail views and local favorites
-- Manual physical/Kindle book entry
-- ISBN lookup through Open Library
-- Offline app shell after first load
+The v0.2 service worker uses a network-first update strategy for app files, which makes future releases less likely to get stuck behind the installed PWA cache.
 
-Manual additions and favorites are stored locally in the browser on that device.
+## Privacy
+The deployed catalog contains sanitized media metadata only. Personal ratings, notes, favorites, recommendation state, and post-v0.2 Audible imports are stored in browser localStorage on the device where you enter them.
+
+## Spreadsheet import
+Libation XLSX/CSV parsing uses SheetJS Community Edition loaded from the official SheetJS CDN.
