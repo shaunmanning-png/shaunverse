@@ -1,24 +1,16 @@
-# The Shaunverse v0.2
+# Shaunverse v0.2.1 — August 23, 2026
+Bug-fix + library expansion release.
 
-Your personal media universe, organized.
-
-## v0.2 highlights
-- Movie posters and descriptions load on demand from Apple's public media catalog and cache locally.
-- Personal 0–10 ratings, favorites, status, and notes for books and movies.
-- Recommendation subgenres and lifecycle: Recommended → Want → Owned → Reading / Listening → Finished (or DNF).
-- Finished recommendations move from Active to History instead of disappearing forever.
-- Update Audible Library directly from a fresh Libation XLSX/CSV export.
-- Audible imports are stored separately from personal notes/ratings so updates do not overwrite them.
-- Manual Physical / Kindle / Audible books plus ISBN lookup.
-- A completely unnecessary but mission-critical Easter egg.
-
-## Updating from v0.1
-Upload all files in this package to the root of the existing `shaunverse` GitHub repository and replace files with the same names. GitHub Pages will redeploy automatically.
-
-The v0.2 service worker uses a network-first update strategy for app files, which makes future releases less likely to get stuck behind the installed PWA cache.
-
-## Privacy
-The deployed catalog contains sanitized media metadata only. Personal ratings, notes, favorites, recommendation state, and post-v0.2 Audible imports are stored in browser localStorage on the device where you enter them.
-
-## Spreadsheet import
-Libation XLSX/CSV parsing uses SheetJS Community Edition loaded from the official SheetJS CDN.
+Highlights:
+- iPhone search no longer loses focus after one character.
+- Books default to newest acquisition/add date first.
+- Podcast-like Audible series are grouped into one card with expandable episodes.
+- Repairs the legacy Traveler note leak while keeping “Holy Shit!!” on The Traveler.
+- Improved Apple movie poster + synopsis lookup.
+- Amazon My Books CSV support for Kindle and physical editions; current Amazon export is preloaded.
+- Libation refresh preserves personal notes/ratings.
+- ISBN lookup plus title/author lookup for manual additions.
+- Duplicate protection for manual adds and delete for manual entries.
+- Watch Again / Read-Listen Again counters.
+- Visible version + build date.
+- Bottom nav remains fixed and iPhone-safe.
