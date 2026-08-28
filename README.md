@@ -27,3 +27,9 @@ Apple play counts are labeled **Apple-recorded plays** because the export is not
 - Also scrubs the same legacy text from recommendation notes.
 - Adds a render-time guard so stale browser storage cannot display it on other titles.
 - Service-worker cache bumped to v0.2.3b.
+
+
+## v0.2.3c hotfix
+- Recursively sweeps every Shaunverse localStorage key (including legacy version keys) and removes any string containing ‘Holy Shit’.
+- Re-applies ‘Holy Shit!!’ only to The Traveler in the current personal-data store.
+- Adds render-time note sanitization as a second guard.
