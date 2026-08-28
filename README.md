@@ -1,16 +1,16 @@
-# Shaunverse v0.2.1 — August 23, 2026
-Bug-fix + library expansion release.
+# Shaunverse v0.2.3 — Apple Assimilation Edition
 
-Highlights:
-- iPhone search no longer loses focus after one character.
-- Books default to newest acquisition/add date first.
-- Podcast-like Audible series are grouped into one card with expandable episodes.
-- Repairs the legacy Traveler note leak while keeping “Holy Shit!!” on The Traveler.
-- Improved Apple movie poster + synopsis lookup.
-- Amazon My Books CSV support for Kindle and physical editions; current Amazon export is preloaded.
-- Libation refresh preserves personal notes/ratings.
-- ISBN lookup plus title/author lookup for manual additions.
-- Duplicate protection for manual adds and delete for manual entries.
-- Watch Again / Read-Listen Again counters.
-- Visible version + build date.
-- Bottom nav remains fixed and iPhone-safe.
+Updated August 28, 2026.
+
+## What changed
+- Apple movie purchase history merged into the movie library
+- Apple-recorded playback counts shown on movie cards/details
+- “Explain Yourself™” dashboard shelf for most-played Apple movies
+- Apple archive summary includes TV, iOS/tvOS apps, Mac apps, Apple Books and podcasts
+- Search input debounced to prevent mobile keyboard/focus drops
+- Book result cap increased to 600 (including Kindle)
+- Legacy Traveler note repair hardened so “Holy Shit!!” stays with The Traveler
+- Easter egg finally revealed in Add & Update: tap the SHAUNVERSE logo 7 times quickly
+- Version/build updated and service-worker cache bumped
+
+Apple play counts are labeled **Apple-recorded plays** because the export is not a complete lifetime viewing history.
