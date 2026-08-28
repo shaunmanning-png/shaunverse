@@ -20,3 +20,10 @@ Apple play counts are labeled **Apple-recorded plays** because the export is not
 - Replaced the misleading ‘Holy Shit!!’ note placeholder with ‘Add a note…’.
 - Reworked the 7-tap Easter egg trigger for iPhone and disabled double-tap zoom on the Shaunverse logo.
 - Bumped the service-worker cache so the hotfix is fetched immediately.
+
+
+## v0.2.3b hotfix
+- Purges any legacy note beginning with ‘Holy Shit’ from every non-The Traveler personal record, regardless of punctuation/capitalization.
+- Also scrubs the same legacy text from recommendation notes.
+- Adds a render-time guard so stale browser storage cannot display it on other titles.
+- Service-worker cache bumped to v0.2.3b.
