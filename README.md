@@ -14,3 +14,9 @@ Updated August 28, 2026.
 - Version/build updated and service-worker cache bumped
 
 Apple play counts are labeled **Apple-recorded plays** because the export is not a complete lifetime viewing history.
+
+
+## v0.2.3a hotfix
+- Replaced the misleading ‘Holy Shit!!’ note placeholder with ‘Add a note…’.
+- Reworked the 7-tap Easter egg trigger for iPhone and disabled double-tap zoom on the Shaunverse logo.
+- Bumped the service-worker cache so the hotfix is fetched immediately.
