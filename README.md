@@ -1,28 +1,18 @@
-## v0.2.6b — Home rollback/stability fix
-- Restores the known-good v0.2.5 Home renderer.
-- Keeps Audible acquisition-history data embedded for later use.
-- Temporarily removes the acquisition timeline from Home.
-- Fixes a detail-view JavaScript initialization bug.
-- Cache keys bumped to 026b.
+# Shaunverse v0.2.6c — Stability Rollback
 
-Shaunverse v0.2.6a — Home Stability Fix
+This build is a clean rollback to the known-good v0.2.5 application and data baseline, with only the visible version/cache keys changed to 0.2.6c.
 
-- Fixes blank Home tab introduced in v0.2.6.
-- Audible history rendering is now isolated and guarded so malformed/missing history data cannot break Home navigation.
-- Preserves all v0.2.6 Audible history data and prior features.
-- Cache-busted assets updated to 026a.
+Temporarily removed:
+- Audible acquisition-history embedded dataset
+- Audible acquisition-history detail fields/timeline
 
-# Shaunverse v0.2.6 — Audible History Merge
+Preserved from the stable baseline:
+- Libation refresh and Audible Snapshot
+- Movie artwork
+- Apple archive integration
+- Harry Potter Local Audio
+- Search fixes
+- Easter egg
+- Personal notes/ratings stored in localStorage
 
-Built from v0.2.5. Adds the Aug 28 Audible extension JSON as a separate acquisition-history layer.
-
-## New
-- 507 Audible acquisition-history events embedded separately from Libation library state
-- 331 unique Audible IDs represented in the history export
-- Acquisition timeline by year
-- Credit/free acquisition counts and recorded returns
-- First known acquisition and recent acquisition list
-- Audiobook detail now shows Audible acquisition date/history where IDs match
-- Preserves v0.2.5 Libation refresh, v0.2.4a movie artwork, Harry Potter Local Audio, search, and prior fixes
-
-Purchase/acquisition dates are not treated as listening dates.
+Purpose: isolate the blank Home regression by removing every 0.2.6 runtime/data change.
