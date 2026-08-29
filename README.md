@@ -1,3 +1,7 @@
+Shaunverse v0.2.4
+
+Movie artwork reliability release. Uses Apple movie purchase IDs first and JSONP fallback searches for static/PWA compatibility.
+
 Shaunverse v0.2.3f — Cache Reset Hotfix
 
 # Shaunverse v0.2.3 — Apple Assimilation Edition
