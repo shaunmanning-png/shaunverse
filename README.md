@@ -1,3 +1,10 @@
+Shaunverse v0.2.6a — Home Stability Fix
+
+- Fixes blank Home tab introduced in v0.2.6.
+- Audible history rendering is now isolated and guarded so malformed/missing history data cannot break Home navigation.
+- Preserves all v0.2.6 Audible history data and prior features.
+- Cache-busted assets updated to 026a.
+
 # Shaunverse v0.2.6 — Audible History Merge
 
 Built from v0.2.5. Adds the Aug 28 Audible extension JSON as a separate acquisition-history layer.
