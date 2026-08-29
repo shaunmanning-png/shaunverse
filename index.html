@@ -9,13 +9,27 @@
   <meta name="apple-mobile-web-app-title" content="Shaunverse">
   <link rel="apple-touch-icon" href="icon-192.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=023e">
+  <link rel="stylesheet" href="styles.css?v=023f">
   <title>Shaunverse</title>
 </head>
 <body>
   <div id="app"></div>
+  <script>
+  (async()=>{
+    try{
+      if('serviceWorker' in navigator){
+        const regs=await navigator.serviceWorker.getRegistrations();
+        await Promise.all(regs.map(r=>r.unregister()));
+      }
+      if('caches' in window){
+        const keys=await caches.keys();
+        await Promise.all(keys.filter(k=>k.startsWith('shaunverse-')).map(k=>caches.delete(k)));
+      }
+    }catch(e){}
+  })();
+  </script>
   <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
-  <script src="data.js?v=023e"></script>
-  <script src="app.js?v=023e"></script>
+  <script src="data.js?v=023f"></script>
+  <script src="app.js?v=023f"></script>
 </body>
 </html>

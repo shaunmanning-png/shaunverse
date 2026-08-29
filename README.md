@@ -1,3 +1,5 @@
+Shaunverse v0.2.3f — Cache Reset Hotfix
+
 # Shaunverse v0.2.3 — Apple Assimilation Edition
 
 Updated August 28, 2026.
