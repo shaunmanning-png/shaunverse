@@ -18,5 +18,5 @@ Preserved from the stable baseline:
 Purpose: isolate the blank Home regression by removing every 0.2.6 runtime/data change.
 
 
-## v0.2.6d
+## v0.2.6e
 Home performance fix: caches podcast grouping once instead of recalculating it for every book; adds visible render-error fallback.
