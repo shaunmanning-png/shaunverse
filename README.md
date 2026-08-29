@@ -16,3 +16,7 @@ Preserved from the stable baseline:
 - Personal notes/ratings stored in localStorage
 
 Purpose: isolate the blank Home regression by removing every 0.2.6 runtime/data change.
+
+
+## v0.2.6d
+Home performance fix: caches podcast grouping once instead of recalculating it for every book; adds visible render-error fallback.
