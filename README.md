@@ -34,8 +34,11 @@ Apple play counts are labeled **Apple-recorded plays** because the export is not
 - Re-applies ‘Holy Shit!!’ only to The Traveler in the current personal-data store.
 - Adds render-time note sanitization as a second guard.
 
-## v0.2.3d local-audio update
+## v0.2.3e local-audio update
 - Added all seven Harry Potter titles as owned Local Audio editions (MP3 / M4B) in the personal library.
 - Preserved the existing physical hardcover record for Order of the Phoenix as a separate edition.
 - Added a Local Audio filter and Local Audio option to Manual Book for future personally-owned audiobook files.
-- Service-worker cache bumped to v0.2.3d.
+- Service-worker cache bumped to v0.2.3e.
+
+
+0.2.3e hotfix: cache-busted core assets and made top search a true cross-universe search across books, movies, and recommendations.
