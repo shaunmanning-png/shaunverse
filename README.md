@@ -1,3 +1,10 @@
+## v0.2.6b — Home rollback/stability fix
+- Restores the known-good v0.2.5 Home renderer.
+- Keeps Audible acquisition-history data embedded for later use.
+- Temporarily removes the acquisition timeline from Home.
+- Fixes a detail-view JavaScript initialization bug.
+- Cache keys bumped to 026b.
+
 Shaunverse v0.2.6a — Home Stability Fix
 
 - Fixes blank Home tab introduced in v0.2.6.
