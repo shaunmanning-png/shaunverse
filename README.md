@@ -1,10 +1,15 @@
-# Shaunverse v0.2.6c — Stability Rollback
+# Shaunverse v0.2.7 — The Listening Nexus
 
-This build is a clean rollback to the known-good v0.2.5 application and data baseline, with only the visible version/cache keys changed to 0.2.6c.
+Built from the stable v0.2.6e baseline. This release assimilates the full Amazon/Audible data export without shipping the enormous raw CSV files.
 
-Temporarily removed:
-- Audible acquisition-history embedded dataset
-- Audible acquisition-history detail fields/timeline
+New in v0.2.7:
+- Audible Listening Nexus dashboard with lifetime, annual, monthly, series, title, narrator, and streak statistics
+- 91,023 raw playback rows deduplicated to 30,925 genuine events before aggregation
+- Per-title playback hours, book-length equivalents, listening days, primary speed, and first/last dates
+- Audible purchase type/date and active/revoked ownership details
+- Human context cards, including the May 2025 COD interview-prep era
+- Multi-format badges show every owned format on library and search cards
+- Stable v0.2.6e render fallback, Home performance fix, search behavior, Apple assimilation, movie art, local audio, notes, and Easter egg preserved
 
 Preserved from the stable baseline:
 - Libation refresh and Audible Snapshot
@@ -15,7 +20,7 @@ Preserved from the stable baseline:
 - Easter egg
 - Personal notes/ratings stored in localStorage
 
-Purpose: isolate the blank Home regression by removing every 0.2.6 runtime/data change.
+Important data note: equivalent listens measure forward audiobook position divided by title length. They include sleep-listening and are not presented as conscious completions.
 
 
 ## v0.2.6e
